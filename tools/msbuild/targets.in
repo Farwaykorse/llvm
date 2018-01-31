@@ -1,0 +1,3 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\@VS_VERSION@\Toolset.targets" Condition="Exists('$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\@VS_VERSION@\Toolset.targets')"/>
+</Project>
