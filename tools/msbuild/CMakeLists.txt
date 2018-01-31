@@ -1,7 +1,7 @@
 if (MSVC)
   # CPack will install a registry key in this format that we wish to reference.
   set(REG_KEY "${CPACK_PACKAGE_INSTALL_REGISTRY_KEY}")
-  set(LIB_PATH_VERSION "${LLVM_VERSION_MAJOR}.${LLVM_VERSION_MINOR}")
+  set(LIB_PATH_VERSION "${LLVM_VERSION_MAJOR}.${LLVM_VERSION_MINOR}.${LLVM_VERSION_PATCH}")
 
   foreach (platform "Win32" "x64")
     set(prop_file_in "Microsoft.Cpp.Win32.llvm.props.in")
